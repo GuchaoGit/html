@@ -20,3 +20,4 @@ p.center {text-align:center;} //所有的 p 元素使用 class="center" 让该�
 ```
   * 多重样式的优先级
     * 内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式
+	

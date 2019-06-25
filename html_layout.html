@@ -3,36 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML 布局</title>
-	<script>
-		function showSelectCar(var x){
-			alert("您已选择了"+x);
+	<base href="./" target="_blank">
+	<style>
+		a{
+			text-decoration:none;
+			color:black;
 		}
+		ul.no-style{
+			list-style-type:none;
+			padding-left:0px;
+		}
+	</style>
+	<script>
 	</script>
 </head>
 
 <body style="background-image:url('./JavaScript/paper.gif')">
 <div id="container" style="width:100%;">
 <div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+<h1 style="margin-bottom:0;">我的HTML练习</h1></div>
 
-<div id="menu" style="background-color:#FFD700;height:500px;width:100px;float:left;padding-left:10px;">
-<b>菜单</b><br>
-HTML<br>
-CSS<br>
-JavaScript<br></div>
-<div id="content" style="background-color:#EEEEEE;height:500px;width:80%;float:left;padding:20px;">
+<div id="menu" style="background-color:#FFD700;width:100px;float:left;padding-left:10px;">
+<ul class="no-style">
+	<li><a href="html.html">首页</a></li>
+	<li><a href="html_css.html">HTML</a></li>
+	<li><a href="html_events.html">CSS</a></li>
+	<li><a href="JavaScript/01.first-script.html">JavaScript</a></li>
+	<li><a href="html_events.html">HTML 事件</a></li>
+	<li><a href="html_frame.html">iframe</a></li>
+	<li><a href="html_script.html">HTML 脚本</a></li>
+</ul>
+
+</div>
+<div id="content" style="background-color:#EEEEEE;width:80%;float:left;padding:20px;">
 	
 	<form action="">
 		Username: <input type="text" name="user"><br><br>
 		Password: <input type="password" name="password"><br><br>
-		<input type="checkbox" value="">是否记住密码?<br>
+		<input type="checkbox" value="rem_pwd">是否记住密码?<br>
 		<input type="submit" value="登陆">
 	</form>
 	
 	<hr/>
 	<h4>单选按钮</h4>
 	<form>
-		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="male" checked="checked">Male<br>
 		<input type="radio" name="sex" value="female">Female<br>
 	</form>
 	<hr/>
@@ -63,7 +78,11 @@ JavaScript<br></div>
 			</td>
 		</tr>
 	</table>
-	
+	<hr/>
+	<h4>文本域</h4>
+<textarea rows="5" cols="30" >
+我是一个文本框
+</textarea>
 
 </div>
 <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
