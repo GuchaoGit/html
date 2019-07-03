@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -9,7 +9,7 @@
 	<p>这是一段话，位于div元素前的第二个 p 元素</p>
 	<p>这是一段话，位于div元素前的第一个 p 元素</p>
 	<div>
-	<h2>CSS组合选择器</h2>
+<h2>CSS组合选择器</h2>
 	四种组合方式
 	<ul>
 		<li>后代选择器(以空格分隔)</li>
@@ -23,13 +23,47 @@
 	<p>这是一段话，位于div元素后的第二个 p 元素</p>
 	<b><p>这是一段话，位于div元素后的第三个 p 元素,与第二个p元素不相邻</p></b>
 	
-	<h2><abbr title="Pseudo-classes">伪类</abbr></h2>
+<h2><abbr title="Pseudo-classes">伪类</abbr></h2>
 	<ul>
-	<li> 语法：<code>selector:pseudo-class {property:value;}<code></li>
-	<li> CSS类的语法：<code>selector.class:pseudo-class {property:value;}<code></li>
+	<li> 语法：<code>selector:pseudo-class {property:value;}</code></li>
+	<li> CSS类的语法：<code>selector.class:pseudo-class {property:value;}</code></li>
 	</ul>
-	<a href="https://www.baidu.com" target="_blank">百度</a><br>
-	<a href="http://www.iciba.com/" target="_blank">金山词霸</a><br>
-	<a href="http://tool.chinaz.com/Tools/urlencode.aspx" target="_blank">站长工具</a>
+	<a class="two" href="https://www.baidu.com" target="_blank">百度</a><br>
+	<a class="two" href="http://www.iciba.com/" target="_blank">金山词霸</a><br>
+	<a class="two" href="http://tool.chinaz.com/Tools/urlencode.aspx" target="_blank">站长工具</a>
+	<br>
+	<div>
+	<b>第一个b元素<i>第一个i</i><i>第二个i</i> </b></div>
+	<q  lang="no">this is code </q>
+	<form  method="get">
+	First name: <input type="text" name="fname" /><br>
+	Last name: <input type="text" name="lname" /><br>
+	<input type="submit" value="提交" /></form>
+<h2>伪元素</h2>
+<h2>导航栏</h2>
+<ul class="none">
+<li class="center vertial"><a  class="active" href="#home">主页</a></li>
+<li class="center vertial"><a  href="#news">新闻</a></li>
+<li class="center vertial"><a  href="#contact">联系</a></li>
+<li class="center vertial"><a  href="#about">关于</a></li>
+</ul>
+<br>
+<ul class="none2">
+<li class="inline "><a  class="active" href="#home">主页</a></li>
+<li class="inline "><a  href="#news">新闻</a></li>
+<li class="inline "><a  href="#contact">联系</a></li>
+<li class="inline "><a  href="#about">关于</a></li>
+</ul>
+<br>
+<ul class="none3">
+<li class="float"><a  class="active" href="#home">主页</a></li>
+<li class="float"><a  href="#news">新闻</a></li>
+<li class="float"><a  href="#contact">联系</a></li>
+<li class="float"><a  href="#about">关于</a></li>
+</ul>
+<br>
+<br>
+<br>
+
 </body>
 </html>

@@ -1,4 +1,5 @@
 @charset "utf-8";
+body {margin:50px 0px;}
 div p /*为div下的p元素设置样式*/
 {
   background-color:yellow;
@@ -17,14 +18,113 @@ div~p /*<div> 元素之后的所有相邻兄弟元素 <p> :*/
 }
 
 /*selector:pseudo-class {property:value;}*/
-a:link {color:#FF0000;background-color:#98bf21;} /* 未访问的链接 */
-a:visited {color:#00FF00;background-color:#98bf21;} /* 已访问的链接 */
-a:hover {color:#FF00FF;background-color:#7A991A;} /* 鼠标划过链接 */
-a:active {color:#0000FF;background-color:#7A991A;} /* 已选中的链接 */
+a.two:link {color:#FF0000;background-color:#98bf21;} /* 未访问的链接 */
+a.two:visited {color:#00FF00;background-color:#98bf21;} /* 已访问的链接 */
+a.two:hover {color:#FF00FF;background-color:#7A991A;} /* 鼠标划过链接 */
+a.two:active {color:#0000FF;background-color:#7A991A;} /* 已选中的链接 */
 
 /*CSS类也可以使用伪类:selector.class:pseudo-class {property:value;}*/
 a.red:visited {color:#FF0000;}
 
 code{
 	background-color:#C8C8C8;
+}
+
+b:first-child{ color:blue;}/*任何元素的第一个<b>元素*/
+b > i:first-child{color:yellow;}/*b元素中的第一个i元素*/
+b:first-child i{color:red}/*任何元素的第一个<b>元素中所有的i*/
+q:lang(no){ /*为q元素lang类属性值为no*/
+	quotes:"~" "~";
+}
+input:focus{background-color:#C8C8C8;}
+h2:before{content:url(../i/pointer.png);}
+
+/*导航栏样式*/
+a.one:link {color:blue;background-color:#FFFFFF;} /* 未访问的链接 */
+a.one:visited {color:blue;background-color:#FFFFFF;} /* 已访问的链接 */
+a.one:hover {color:blue;background-color:#FFFFFF;} /* 鼠标划过链接 */
+a.one:active {color:blue;background-color:#FFFFFF;} /* 已选中的链接 */
+ul.none
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 200px;
+    background-color: #f1f1f1;
+	border: 1px solid #555;
+}
+li.vertial a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li.center {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+li.center:last-child {
+    border-bottom: none;
+}
+
+/*导航栏样式2 水平*/
+ul.none2
+{
+	list-style-type:none;
+	margin:0;
+	padding:8px 0px;
+	background-color: #f1f1f1;
+}
+li.inline
+{
+	display:inline;
+}
+li.inline a {
+    display: inline;
+	width:60px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/*导航栏样式3 水平*/
+ul.none3
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color: #f1f1f1;
+	overflow:hidden;
+	position: fixed;
+    top: 0;
+	width:100%;
+}
+li.float
+{
+	float:left;
+	text-align:center;
+	border-right: 1px solid #bbb;
+}
+li.float:last-child{
+	border-right:none;
+}
+li.right
+{
+	float:right;
+}
+li.float a
+{
+	display:block;
+	width:60px;
+	padding: 8px 16px;
+    text-decoration: none;
 }
