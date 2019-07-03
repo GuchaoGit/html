@@ -1,0 +1,30 @@
+@charset "utf-8";
+div p /*为div下的p元素设置样式*/
+{
+  background-color:yellow;
+}
+div>p /*为div直接子元素p设置样式*/
+{
+  background-color:red;
+}
+div+p /*位于 <div> 元素后的第一个 <p> 元素*/
+{
+  background-color:green;
+}
+div~p /*<div> 元素之后的所有相邻兄弟元素 <p> :*/
+{
+  background-color:blue;
+}
+
+/*selector:pseudo-class {property:value;}*/
+a:link {color:#FF0000;background-color:#98bf21;} /* 未访问的链接 */
+a:visited {color:#00FF00;background-color:#98bf21;} /* 已访问的链接 */
+a:hover {color:#FF00FF;background-color:#7A991A;} /* 鼠标划过链接 */
+a:active {color:#0000FF;background-color:#7A991A;} /* 已选中的链接 */
+
+/*CSS类也可以使用伪类:selector.class:pseudo-class {property:value;}*/
+a.red:visited {color:#FF0000;}
+
+code{
+	background-color:#C8C8C8;
+}
