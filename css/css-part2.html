@@ -5,10 +5,10 @@
 	<title >CSS样式学习二</title>
 	<link rel="stylesheet" type="text/css" href="style-part2.css">
 </head>
-<body>
+<body >
 	<p>这是一段话，位于div元素前的第二个 p 元素</p>
 	<p>这是一段话，位于div元素前的第一个 p 元素</p>
-	<div>
+	<div class="selector">
 <h2>CSS组合选择器</h2>
 	四种组合方式
 	<ul>
@@ -22,7 +22,7 @@
 	<p>这是一段话，位于div元素后的第一个 p 元素</p>
 	<p>这是一段话，位于div元素后的第二个 p 元素</p>
 	<b><p>这是一段话，位于div元素后的第三个 p 元素,与第二个p元素不相邻</p></b>
-	
+	<p>与第二个p 隔了一个标签</p>
 <h2><abbr title="Pseudo-classes">伪类</abbr></h2>
 	<ul>
 	<li> 语法：<code>selector:pseudo-class {property:value;}</code></li>
@@ -53,6 +53,14 @@
 <li class="inline "><a  href="#news">新闻</a></li>
 <li class="inline "><a  href="#contact">联系</a></li>
 <li class="inline "><a  href="#about">关于</a></li>
+<div class="dropdown">
+    <a class="no-decoration" href="#" class="dropbtn">下拉菜单</a>
+    <div class="dropdown-content">
+      <a href="#">链接 1</a>
+      <a href="#">链接 2</a>
+      <a href="#">链接 3</a>
+    </div>
+  </div>
 </ul>
 <br>
 <ul class="none3">
@@ -61,6 +69,80 @@
 <li class="float"><a  href="#contact">联系</a></li>
 <li class="float"><a  href="#about">关于</a></li>
 </ul>
+
+<h2>下拉菜单</h2>
+
+<div class="dropdown container">
+  <button class="dropbtn">下拉菜单</button>
+  <div class="dropdown-content">
+    <p>谷超超</p>
+    <p>happygc@126.com</p>
+  </div>
+</div>
+
+<div class="dropdown container">
+  <button class="dropbtn">图片下拉</button>
+  <div class="dropdown-content">
+	<img src="../i/klematis_small.jpg" width="180" height="160"/>
+    <p class="desc">happygc@126.com</p>
+  </div>
+</div>
+
+<h2>CSS提示工具</h2>
+<div class="container tooltip">有提示信息
+	<span class="tooltiptext">这里是提示信息</span>
+</div>
+
+<div class="container tooltip">有提示信息
+	<span class="tooltiptext-top">这里是提示信息</span>
+</div>
+
+<h2>图片廊</h2>
+
+<div class="responsive">
+<div class="img">
+	<a target="_blank" href="../i/demo1.jpg">
+	<img src="../i/demo1.jpg"></img></a>
+	<div class="desc">照片描述</div>
+</div>
+</div>
+<div class="responsive">
+<div class="img">
+	<a target="_blank" href="../i/demo1.jpg">
+	<img src="../i/demo2.jpg" class="alph40"></img></a>
+	<div class="desc">照片描述</div>
+</div>
+</div>
+<div class="responsive">
+<div class="img">
+	<a target="_blank" href="../i/demo1.jpg">
+	<img src="../i/demo1.jpg" class="alph40"></img></a>
+	<div class="desc">照片描述</div>
+</div>
+</div>
+<div class="responsive">
+<div class="img">
+	<a target="_blank" href="../i/demo1.jpg">
+	<img src="../i/demo2.jpg"></img></a>
+	<div class="desc">照片描述</div>
+</div>
+</div>
+<h2>图像拼合技术</h2>
+<img src="../i/img_navsprites.gif">完整的图片</img>
+<img class="home" src="../i/img_trans.gif">一部分图片</img>
+<img class="next" src="../i/img_trans.gif">下一个</img>
+<img class="prev" src="../i/img_trans.gif">上一个</img>
+
+<h2>属性选择器</h2>
+<div class="container">
+CSS 属性选择器 *=, |=, ^=, $=, *= 的区别<br>
+"value 是完整单词" 类型的比较符号: ~=, |=<br>
+"拼接字符串" 类型的比较符号: *=, ^=, $=<br>
+<p abc="white" lang="en">这是一段话</p>
+<p abc="red">这是一段话（红色背景）</p>
+<p abc = "white" lang="us">这是一段话</p>
+<p abc="green white">这是一段话(绿色背景)</p>
+</div>
 <br>
 <br>
 <br>
