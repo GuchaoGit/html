@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS学习一</title>
+		<script src="js.js"></script>
+		<link href="js.css" type="text/css" style="stylesheet">
+	</head>
+	
+	<body>
+		<h2>JavaScript：直接写入 HTML 输出流</h2>
+		<script>
+			document.write("<p>这是通过js写的一段</p>");
+		</script>
+		<h2>JavaScript：对事件的反应</h2>
+		<button type="button" onclick="alert('hello')">点我</button>
+		<h2>JavaScript：改变 HTML 内容&&样式</h2>
+		<p id="demo">JavaScript 能改变 HTML 元素的内容。</p>
+		<button type="button" onclick="myFunction()">改变内容</button>
+		<button type="button" onclick="changeStyle()">改变样式</button>
+		<br>
+		<img id="myimage" onclick="changeImage()" src="../i/pic_bulboff.gif" width="100" height="180">
+		<p>点击灯泡就可以打开或关闭这盏灯</p>
+		<input id="demo2" type="text" placeholder="请输入数字">
+		<button type="button" onclick="validateInput()">点击这里</button>
+		<h2>JavaScript：输出</h2>
+		<script>
+			window.alert(5 + 6);
+		</script>
+		<ul>
+			<li><code>window.alert()</code>弹出警告框</li>
+			<li><code>document.getElementById("demo").innerHTML = "段落已修改。";</code>修改元素内容</li>
+			<li><code>document.write(Date());</code>写到html文档</li>
+			<li><code>console.log(c);</code>写到控制台</li>
+		</ul>
+		<script>
+			a = 5;
+			b = 6;
+			c = a + b;
+			console.log(c);
+		</script>
+		<h2>JavaScript：语法</h2>
+		<p id="demo3">算数运算</p>
+		<script>
+			var x, y, z;
+			x = 5;
+			y = 6;
+			z = (x + y) * 10;
+			document.getElementById("demo3").innerHTML = z;
+		</script>
+		<p id="demo4">算数运算</p>
+		<script>
+			var x, y, z;
+			x = 5;
+			y = "volvo";
+			z = x + y;
+			document.getElementById("demo4").innerHTML = z;
+		</script>
+		<p id="myPar">我是一个段落。</p>
+		<div id="myDiv">我是一个div。</div>
+		<p><button type="button" onclick="myFunction(myPar,myDiv,this)">点击这里</button></p>
+	</body>
+</html>
