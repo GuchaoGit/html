@@ -1,4 +1,8 @@
-@charset "utf-8"
+@charset "utf-8";
+h2:before{
+	content:url(../i/pointer.png);
+}
+
 code{
-	background-color:#F1F1F1;
+	background-color:#C8C8C8;
 }
