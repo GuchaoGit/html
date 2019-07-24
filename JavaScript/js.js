@@ -156,3 +156,19 @@ function testCustomException(inputElement,showElement){
 	}
 	
 }
+
+function validateForm(){
+	var x = document.forms["myForm"]["fname"].value;
+	 if (x == null || x == "") {
+        alert("需要输入名字。");
+        return false;
+    }
+}
+function validateInputWithApi(){
+	var inputObj = document.getElementById("input1");
+	if(!inputObj.checkValidity()){
+		document.getElementById("demo18").innerHTML=inputObj.validationMessage;
+	}else{
+		document.getElementById("demo18").innerHTML="输入正确";
+	}
+}

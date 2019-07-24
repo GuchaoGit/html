@@ -197,5 +197,21 @@
 		<input id = "demo17" type="text">
 		<button type="button" onclick="testCustomException(demo17,message)">测试输入</button>
 		<p id="message"></p>
+		<h2>JavaScript：严格模式</h2>
+		<p><code>"use strict";//全局"use strict"声明，不允许使用未声明的变量</code></p>
+		<h2>JavaScript：表单</h2>
+		<form name="myForm" action="#"
+		onsubmit="return validateForm()" method="post">
+		名字: <input type="text" name="fname" placeHolder="请输入名字">
+		<input type="submit" value="提交">
+		</form>
+		<form action="#" method="post">
+		<input type="text" name="fname" required="required" placeHolder="通过属性来添加非空校验">
+		<input type="submit" value="提交">
+		</form>
+		
+		<input id="input1" type="number" min="100" max="300" required>
+		<button onclick="validateInputWithApi()">验证</button>
+		<p id="demo18"></p>
 	</body>
 </html>
